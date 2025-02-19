@@ -1,0 +1,172 @@
+/* Appliquer un fond foncé à la page entière */
+.home-container {
+  background-color: #121212;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Titre du site */
+.site-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Bouton de navigation */
+.navigate-button {
+  background-color: #ffcc00;
+  color: #121212;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.navigate-button:hover {
+  background-color: #e6b800;
+}
+
+/* Navbar en haut */
+.navbar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.login-button {
+  background: none;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background: white;
+  color: black;
+}
+
+/* Menu de navigation en bas (visible sur mobile) */
+.bottom-nav {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.bottom-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Section description */
+.description {
+  margin-top: 50px;
+  max-width: 600px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Icônes des réseaux sociaux */
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+/* Formulaire de contact */
+.contact-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #ffcc00;
+  color: black;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background-color: #e6b800;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 600px) {
+  .site-title {
+    font-size: 2rem;
+  }
+
+  .navigate-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #111;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #ccc;
+}
